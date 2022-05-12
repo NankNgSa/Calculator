@@ -7,7 +7,6 @@
   </head>
   <body>
     <div class="container">
-
       <div class="screen">
         <div id="nbreAffichee"><span>0</span></div>
       </div>
@@ -15,15 +14,22 @@
         <input
           type="button"
           name="reset"
-          value="Reset/ON"
+          value="Reset"
           onclick="boutton_special(this.name)"
         />
         <input
           type="button"
           name="bs"
-          value="Backspace/OFF"
+          value="Backspace"
           onclick="boutton_special(this.name)"
         />
+        <input
+          type="button"
+          name="on_off"
+          value="ON/OFF"
+          onclick="on_off(this.name)"
+        />
+        <!-- <button class="button">Click Me</button> -->
       </div>
       <div class="keypad">
         <input type="button" name="1" value="1" onclick="boutton(this.name)" />
@@ -44,7 +50,6 @@
         <input type="button" name="/" value="/" onclick="boutton(this.name)" />
       </div>
     </div>
-
   </body>
   <script src="cal.js"></script>
 </html>
