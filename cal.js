@@ -84,7 +84,7 @@ function boutton(m) {
     } else {
       nbre2 = nbre2 + m;
       document.getElementById("nbreAffichee").innerHTML =
-        nbre1 + operateur + nbre2;
+        nbre1 + nbre2;//operateur + nbre2;
     }
   }
 }
@@ -113,7 +113,7 @@ function boutton_special(m) {
           bx.pop();
           nbre2 = bx.join("");
           document.getElementById("nbreAffichee").innerHTML =
-            nbre1 + operateur + nbre2;
+            nbre1 + nbre2;// operateur + nbre2;
         }
       } else if (nbre1 != "" && operateur == "") {
         var ax = new Array();
@@ -125,3 +125,53 @@ function boutton_special(m) {
       break;
   }
 }
+
+/*let input = document.querySelector(".input");
+input.disabled = true;
+input.addEventListener("change", on_off);
+function on_off(m) {
+  if (document.querySelector(".input").value === "") {
+    input.disabled = true; 
+  } else {
+    input.disabled = false;
+  }
+}*/
+
+/*let input = document.querySelector(".input");
+let button = document.querySelector(".button");
+button.disabled = true;
+input.addEventListener("change", on_off);
+function on_off() {
+  if (document.querySelector(".input").value === "") {
+    button.disabled = true; 
+  } else {
+    button.disabled = false;
+  }
+}*/
+
+/*function on_off(item){
+  on_off.innerText="0";
+  constEcran = "";
+etatCalco = true;
+document.addEventListener("keydown", off);
+let touche_on = document.querySelector(".button");
+for(lettouche of touche_on ){
+  touche.addEventListener("onclick", off);
+}
+}*/
+
+/*function on_off(m){
+  const btn = document.querySelector(".button");
+  const btn_on_off = document.querySelector(".nbreAffichee"); // nbreAffichee
+
+  btn.addEventListener("onclick",()=>{
+    btn_on_off.classList.toggle(is-visible);
+  })
+}
+
+function on_off(m){
+  if(m == "on_off"){
+     nbre1 = "", nbre2="";
+    document.getElementById("nbreAffichee").innerHTML ="";
+  }
+}*/
